@@ -1,22 +1,21 @@
 
-   (descripcion:)
+  
+**KidsRewiev(o FamilyWithKids?)**
    
-   KidsRewiev(o FamilyWithKids?)
+          El proyecto combina una "guía para niños" en       region Metropolitana, reseñas con fotos y pósters(todavia no).
    
-   El proyecto combina una "guía para niños" en region Metropolitana, reseñas con fotos y pósters(todavia no).
-   
-- museos para niños
-- Entretenimiento y atracciones para niños.
-- jardines y parques
-- Restaurantes con sala infantil.
-- Parques acuáticos y piscinas.
-- hoteles para niños
-- pistas de hielo
+     - museos para niños
+     - Entretenimiento y atracciones para niños.
+     - jardines y parques
+     - Restaurantes con sala infantil.
+     - Parques acuáticos y piscinas.
+     - hoteles para niños
+     - pistas de hielo
 
-etc
+    Y mucho más con descripciones, contactos, 
+    
+      fotos y comentarios.
 
-Y mucho más con descripciones, contactos, fotos y comentarios, en esp e 
-ingles.
    
    - Objetivos para la interfaz y para la experiencia del usuario (1 punto)
    
@@ -29,15 +28,21 @@ ingles.
       - debe tener buscador
       - debe tener mapa para poder encontrar lugares cercanos al cliente
       - sitio debe ser responsivo
-   
-   
-   
-   
-   
 
-   # Requesitos generales
+      
+      ( Boceto a mano (imagen agregada a README.md y a carpeta images) (1
+punto)):
+
+![sketch desktop](assets/img/sketch_desktop.jpg)
+![sketch mobile](assets/img/sketch_mobile.jpg)
+   
+   
+   
+   
+##Requesitos generales
    
     Definición de layout (1 punto)
+- Una página web tipo landing-page que contiene:
 
   - Una barra de navegación y un footer.
   - 4 secciones:
@@ -47,12 +52,29 @@ ingles.
       - La cuarta seccion, mapa con filtro
       
    
-  ( Boceto a mano (imagen agregada a README.md y a carpeta images) (1
-punto))
-
-
-colores:
-
-   #083b66
    
-   #4bc5d1
+##Requerimientos específicos:
+   - Iconos con background ??
+      - *Usar repositorio "Font Awesome"*       
+   - Mapa de ubicacion con lugares y un filtro
+      - *iframe y averiguar como colocar el filtro*
+   - Calendario con eventos
+      - *como agregar eventos a un calendario*
+   - Secciónes con grilla
+      - *Usar Bootstrap*
+
+      
+##Requerimientos visuales:
+   - Layout:
+      - Para crear layout usar Bootstrap.
+   - Fuentes *(Buscar en Google Fonts)*:
+      - Títulos:
+      - Párrafos y otros:
+   - Colores:
+       #083b66
+       #4bc5d1
+      - Letras:?
+      - Botones y background de íconos:?
+      - Barra de navegación y footer:?
+      - Letras de barra de navegación y footer:? 
+   - Imagenes
