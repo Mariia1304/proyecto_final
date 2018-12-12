@@ -7,7 +7,7 @@
     margin-bottom: 0;
 }
 .navbar {
-    background-color: #dbf3f5;
+    background-color: transparent;
     height: 100px;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
@@ -60,11 +60,20 @@ ul.nav {
     ul.dropdown-menu {
         font-size: 1.6rem;
     }
+    .navbar-collapse {
+        width: 100%;
+        z-index: 1000;
+        position: absolute;
+    }
 }
 /*Header*/
 
-@media only screen and (max-width: 767px) {
-    .carousel {
-        display: none;
-    }
+/*Seccion place_top*/
+
+.col-md-3 {
+    padding: 0;
+}
+.place_top img {
+    height: 200px;
+    width: 310.5px;
 }
