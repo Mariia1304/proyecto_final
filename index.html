@@ -11,12 +11,13 @@
         <!-- Optional theme -->
         <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet"/>
         <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet"/>
         <!-- Main Styles -->
         <link href="assets/css/style.css" rel="stylesheet"/>
     </head>
     <body>
         <!-- navbar -->
-        <nav class="navbar">
+        <nav class="navbar navbar__KidsReview">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -151,10 +152,10 @@
                         </li>
                         <form class="navbar-form navbar-right">
                             <div class="form-group">
-                                <input class="form-control" placeholder="Buscar.." type="text">
+                                <input class="form-control" placeholder="Buscar.." style="font-family: 'Londrina Solid', cursive;" type="text">
                                 </input>
                             </div>
-                            <button class="btn btn-default" type="submit">
+                            <button class="btn btn-default" style="font-family: 'Londrina Solid', cursive;" type="submit">
                                 OK
                             </button>
                         </form>
@@ -165,19 +166,79 @@
             <!-- /.container-fluid -->
         </nav>
         <!-- header -->
-        <header class="">
+        <header class="header__KidsReview">
+            <!--Carousel-->
+            <div class="carousel slide" data-ride="carousel" id="myCarousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#myCarousel">
+                    </li>
+                    <li data-slide-to="1" data-target="#myCarousel">
+                    </li>
+                    <li data-slide-to="2" data-target="#myCarousel">
+                    </li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="" src="assets/img/boy.jpg" style="width: 100%">
+                            <div class="carousel-caption">
+                                <h3>
+                                </h3>
+                                <p>
+                                </p>
+                            </div>
+                        </img>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="assets/img/christmas.jpg" style="width: 100%">
+                            <div class="carousel-caption">
+                                <h3>
+                                </h3>
+                                <p>
+                                </p>
+                            </div>
+                        </img>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="assets/img/education.jpg" style="width: 100%">
+                            <div class="carousel-caption">
+                                <h3>
+                                </h3>
+                                <p>
+                                </p>
+                            </div>
+                        </img>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+                    <span class="glyphicon glyphicon-chevron-left">
+                    </span>
+                    <span class="sr-only">
+                        Previous
+                    </span>
+                </a>
+                <a class="right carousel-control" data-slide="next" href="#myCarousel">
+                    <span class="glyphicon glyphicon-chevron-right">
+                    </span>
+                    <span class="sr-only">
+                        Next
+                    </span>
+                </a>
+            </div>
         </header>
         <!-- section calendario -->
-        <section class="calendario">
+        <section class="container-fluid calendario">
         </section>
         <!-- section noticias -->
-        <section class="noticias">
+        <section class="container-fluid noticias">
         </section>
         <!-- section mapa -->
-        <section class="mapa">
+        <section class="container-fluid mapa">
         </section>
         <!-- footer -->
-        <footer>
+        <footer class="footer__KidsReview">
         </footer>
         <!--JQuery 3.3.1 -->
         <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
