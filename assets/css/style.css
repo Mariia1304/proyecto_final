@@ -1,3 +1,7 @@
+/*Global Styles */
+
+/*Navbar*/
+
 .navbar-brand img {
     max-width: 200px;
     margin-top: -50px;
@@ -66,8 +70,30 @@ ul.nav {
         position: absolute;
     }
 }
-/*Header*/
+/*header*/
 
+img.carousel-inner {
+    width: 100%;
+}
+.carousel-caption {
+    padding-bottom: 300px
+}
+.carousel-inner h3 {
+    font-size: 6rem;
+}
+.carousel-inner a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+}
+@media only screen and (max-width: 767px) {
+    .carousel-caption {
+        padding-bottom: 50px;
+    }
+    .carousel-inner h3 {
+        font-size: 2rem;
+    }
+}
 /*Seccion place_top*/
 
 .col-md-3 {
@@ -75,5 +101,46 @@ ul.nav {
 }
 .place_top img {
     height: 200px;
-    width: 310.5px;
+    width: 100%;
+}
+/*Seccion calendario*/
+
+.calendario img {
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+/*mapa*/
+
+/*footer*/
+
+.fab {
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: #083B66;
 }
