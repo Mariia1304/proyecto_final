@@ -105,13 +105,19 @@ img.carousel-inner {
 }
 /*Seccion calendario*/
 
+.calendario .relative {
+    padding-right: 0px;
+}
+.calendario .overlay {
+    left: 0;
+}
 .calendario img {
     width: 100%;
 }
 * {
     box-sizing: border-box;
 }
-.container {
+.relative {
     position: relative;
 }
 .overlay {
@@ -129,7 +135,7 @@ img.carousel-inner {
     padding: 20px;
     text-align: center;
 }
-.container:hover .overlay {
+.relative:hover .overlay {
     opacity: 1;
 }
 /*mapa*/
