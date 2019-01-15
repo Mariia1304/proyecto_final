@@ -6,6 +6,8 @@
         <title>
             KidsReview
         </title>
+        <script src="assets/js/app_mapa.js">
+        </script>
         <!-- Latest compiled and minified CSS -->
         <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
         <!-- Optional theme -->
@@ -15,9 +17,22 @@
         <!-- Font Awesome 5  -->
         <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
         <!-- Main Styles -->
-        <link href="assets/css/mini-event-calendar.css" rel="stylesheet">
-            <link href="assets/css/style.css" rel="stylesheet"/>
-        </link>
+        <link href="assets/css/mini-event-calendar.css" rel="stylesheet"/>
+        <link href="assets/css/style.css" rel="stylesheet"/>
+        <style>
+            /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        width: 50%;
+        height: 70vh;
+      }
+      @media only screen and (max-width: 767px) {
+     #map {
+        width: 100%;
+        height: 70vh;
+      }
+  }
+        </style>
     </head>
     <body>
         <!-- navbar -->
@@ -257,113 +272,101 @@
             </div>
         </section>
         <!-- section place_top -->
+        lugares top para visitar con niños
         <section class="container-fluid place_top">
-            lugares top para visitar con niños
-            <div class="row">
-                <div class="relative place_top__1 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive" src="assets/img/Top_araucano.jpg"/>
-                        <div class="overlay">
-                            <div class="text">
-                                Parque Araucano
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="relative place_top__2 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive" src="assets/img/Top_buin.jpg"/>
-                        <div class="overlay">
-                            <div class="text">
-                                Buin Zoologico
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="relative place_top__3 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive" src="assets/img/Top_delainfancia.jpg"/>
-                        <div class="overlay">
-                            <div class="text">
-                                Parque Bicentenario de la Infancia
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="relative place_top__4 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive" src="assets/img/Top_fanta.jpg"/>
-                    </a>
+            <div class="relative place_top__1 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive" src="assets/img/Top_araucano.jpg"/>
                     <div class="overlay">
                         <div class="text">
-                            Fantazilandia
+                            Parque Araucano
                         </div>
+                    </div>
+                </a>
+            </div>
+            <div class="relative place_top__2 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive" src="assets/img/Top_buin.jpg"/>
+                    <div class="overlay">
+                        <div class="text">
+                            Buin Zoologico
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="relative place_top__3 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive" src="assets/img/Top_delainfancia.jpg"/>
+                    <div class="overlay">
+                        <div class="text">
+                            Parque Bicentenario de la Infancia
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="relative place_top__4 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive" src="assets/img/Top_fanta.jpg"/>
+                </a>
+                <div class="overlay">
+                    <div class="text">
+                        Fantazilandia
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="relative place_top__5 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive image" src="assets/img/Top_ferroviario.jpg"/>
-                        <div class="overlay">
-                            <div class="text">
-                                Museo Ferroviario
-                            </div>
+            <div class="relative place_top__5 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive image" src="assets/img/Top_ferroviario.jpg"/>
+                    <div class="overlay">
+                        <div class="text">
+                            Museo Ferroviario
                         </div>
-                    </a>
-                </div>
-                <div class="relative place_top__6 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive" src="assets/img/Top_kidzania.jpg"/>
-                        <div class="overlay">
-                            <div class="text">
-                                Kidzania
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="relative place_top__6 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive" src="assets/img/Top_kidzania.jpg"/>
+                    <div class="overlay">
+                        <div class="text">
+                            Kidzania
                         </div>
-                    </a>
-                </div>
-                <div class="relative place_top__7 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive" src="assets/img/Top_mampato.jpg"/>
-                        <div class="overlay">
-                            <div class="text">
-                                MamPato
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="relative place_top__7 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive" src="assets/img/Top_mampato.jpg"/>
+                    <div class="overlay">
+                        <div class="text">
+                            MamPato
                         </div>
-                    </a>
-                </div>
-                <div class="relative place_top__8 col-md-3">
-                    <a href="">
-                        <img alt="" class="img-responsive" src="assets/img/Top_mim.jpg"/>
-                        <div class="overlay">
-                            <div class="text">
-                                MIM
-                            </div>
+                    </div>
+                </a>
+            </div>
+            <div class="relative place_top__8 col-md-3 col-sm-6 col-xs-6">
+                <a href="">
+                    <img alt="" class="img-responsive" src="assets/img/Top_mim.jpg"/>
+                    <div class="overlay">
+                        <div class="text">
+                            MIM
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </section>
         <!-- section mapa -->
-        <section class=" mapa">
-            mapa con filtro
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe allowfullscreen="" class="embed-responsive-item" frameborder="0" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426000.96526552865!2d-70.91003077072108!3d-33.47189986958014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2z0KHQsNC90YLRjNGP0LPQviwg0KHRgtC-0LvQuNGH0L3QsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2scl!4v1544638360146" style="border:0" width="600">
-                        </iframe>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        filtro
-                    </p>
-                </div>
-            </div>
+        <section id="map" style="float: left">
         </section>
+        <form action="" style="float: left">
+            <input type="text">
+            </input>
+        </form>
         <!-- footer -->
-        <footer class="footer__KidsReview">
-            siguenos en redes sociales
+        <footer class="footer__KidsReview" style="margin-top: 500px;">
+            <p>
+                siguenos en redes sociales
+            </p>
             <div class="row">
                 <a href="">
                     <i class="fab fa-facebook-f">
@@ -379,6 +382,9 @@
                 </a>
             </div>
         </footer>
+        <!-- API google maps -->
+        <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAji56K9ixl6HA_0tZ6GEZndoiRzj5BFN4&callback=initMap" type="text/javascript">
+        </script>
         <!--JQuery 3.3.1 -->
         <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
         </script>
