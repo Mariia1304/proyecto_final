@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Slider
+        </title>
+        <link href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js">
+        </script>
+        <style>
+            .contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+ 
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+        </style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="contenedor">
+                <img alt="" src="assets/img/boy.jpg"/>
+                <div class="texto-encima">
+                    texto
+                </div>
+                <div class="centrado">
+                    centrado
+                </div>
+            </div>
+            <div>
+                I am another slide.
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+        </script>
+    </body>
+</html>
