@@ -5,34 +5,191 @@
         <title>
             Contacto
         </title>
+        <script src="assets/js/app_mapa.js">
+        </script>
+        <!-- Latest compiled and minified CSS -->
+        <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet"/>
+        <!-- Optional theme -->
+        <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet"/>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet"/>
+        <!-- Font Awesome 5  -->
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet"/>
+        <!-- Main Styles -->
+        <link href="assets/css/mini-event-calendar.css" rel="stylesheet"/>
+        <link href="assets/css/style.css" rel="stylesheet"/>
     </head>
+    <style>
+        /* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 0px;
+}
+.container form{
+	float:none;
+	margin:auto; 
+}
+/* Style inputs with type="text", select elements and textareas */
+input,textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+.submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+    </style>
     <body>
-        <form id="contacto" method="post">
-            <div>
-                <label for="msg">
-                    Message:
-                </label>
-                <textarea id="msg" value="">
-                </textarea>
+        <nav class="navbar navbar__KidsReview">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+                        <span class="sr-only">
+                            Toggle navigation
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="file:///Users/maria/Desktop/Front-End-G11/proyecto_final/index.html">
+                        <img alt="" src="assets/img/logo.png"/>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                                Lugares
+                                <span class="caret">
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        Jardines y parques
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Juegos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Museos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Piscinas y Parques aquaticos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Zoo y Circus
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Cine
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Bibliotecas y librerias
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        KidFrendly-restourantes
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                                Eventos
+                                <span class="caret">
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="file:///Users/maria/Desktop/Front-End-G11/proyecto_final/calendar.html" target="_blank">
+                                        Calendario de eventos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="file:///Users/maria/Desktop/Front-End-G11/proyecto_final/actividades.html" target="_blank">
+                                        Actividades en tu comuna
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="link">
+                            <a href="file:///Users/maria/Desktop/Front-End-G11/proyecto_final/contacto.html" target="_blank">
+                                Contacto
+                            </a>
+                        </li>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Buscar.." style="font-family: 'Londrina Solid', cursive;" type="text">
+                                </input>
+                            </div>
+                            <button class="btn btn-default" style="font-family: 'Londrina Solid', cursive;" type="submit">
+                                OK
+                            </button>
+                        </form>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <div>
-                <label for="nombre">
-                    Nombre
-                </label>
-                <input id="nombre" type="text" value=""/>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="row">
+            <div class="container col-md-6">
+                <form id="contacto" method="post">
+                    <div>
+                        <label for="msg">
+                            Message:
+                        </label>
+                        <textarea id="msg" value="">
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="nombre">
+                            Nombre
+                        </label>
+                        <input id="nombre" type="text" value=""/>
+                    </div>
+                    <div>
+                        <label for="email">
+                            Email
+                        </label>
+                        <input id="email" type="text" value=""/>
+                    </div>
+                </form>
+                <button class="submit" id="submit">
+                    Enviar
+                </button>
             </div>
-            <div>
-                <label for="email">
-                    Email
-                </label>
-                <input id="email" type="text" value=""/>
-            </div>
-        </form>
-        <button class="submit" id="submit">
-            Enviar
-        </button>
-        <p id="datos">
-        </p>
+        </div>
         <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
         </script>
         <script src="assets/js/script.js">
