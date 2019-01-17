@@ -12,10 +12,30 @@ var db_events = [{
     link: "events.com/ev1"
 }];
 $(document).ready(function() {
-    $("#calendar").MEC({
-        calendar_link: "example.com/myCalendar",
-        events: db_events
-    });
+    //$("#calendar").MEC({
+    //  calendar_link: "example.com/myCalendar",
+    //events: db_events
+    // });
     //if you don't have events, use
-    $("#calendar2").MEC();
+    //$("#calendar2").MEC();
+    //validacion de formulario de contacto:
+    $("#submit").on("click", function() {
+        var nombre = $("#nombre").val();
+        var email = $("#email").val();
+        var text = $("#msg").val();
+        if (text.trim().length == 0) {
+            alert("hay que llenar campo message");
+            $("#msg").focus();
+        } else if (nombre.trim().length == 0) {
+            alert("hay que llenar campo nombre");
+            $("#nombre").focus();
+        } else if (email.trim().length == 0) {
+            alert("hay que llenar campo email");
+            $("#email").focus();
+        } else {
+            $("#nombre").val('');
+            $("#email").val('');
+            $("#msg").val('');
+        }
+    });
 });
