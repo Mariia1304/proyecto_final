@@ -58,3 +58,48 @@ function showWindow(title, text) {
     var content = '<div class="info_content">' + '<h3>' + title + '</h3>' + '<p>' + text + '</p>' + '</div>';
     return content;
 }
+
+function createJsonArray() {
+    var jsonArg1 = new Object();
+    jsonArg1.title = 'Parque Araucano';
+    jsonArg1.distrit = 'Vitacura';
+    jsonArg1.type = 'parque';
+    jsonArg1.latitude = -33.402212;
+    jsonArg1.longitude = -70.574934;
+    jsonArg1.description = 'Blablablabla';
+    var jsonArg2 = new Object();
+    jsonArg2.title = 'Parque Bicentenario';
+    jsonArg2.distrit = 'Vitacura';
+    jsonArg2.type = 'parque';
+    jsonArg2.latitude = -33.398627;
+    jsonArg2.longitude = -70.604674;
+    jsonArg2.description = 'Blablablabla';
+    var jsonArg3 = new Object();
+    jsonArg3.title = 'Resto Alfonsina';
+    jsonArg3.distrit = 'Santiago';
+    jsonArg3.type = 'restaurant';
+    jsonArg3.latitude = -33.366450;
+    jsonArg3.longitude = -70.530167;
+    jsonArg3.description = 'Blablablabla';
+    var jsonArg4 = new Object();
+    jsonArg4.title = 'MIM';
+    jsonArg4.distrit = 'Ñuñoa';
+    jsonArg4.type = 'museo';
+    jsonArg4.latitude = -33.517340;
+    jsonArg4.longitude = -70.615900;
+    jsonArg4.description = 'Blablablabla';
+    var jsonArg5 = new Object();
+    jsonArg5.title = 'Fantasilandia';
+    jsonArg5.distrit = 'Santiago';
+    jsonArg5.type = 'juegos';
+    jsonArg5.latitude = -33.460331480676615;
+    jsonArg5.longitude = -70.66455529978288;
+    jsonArg5.description = 'Blablablabla';
+    var ArrayArg = new Array();
+    ArrayArg.push(jsonArg1);
+    ArrayArg.push(jsonArg2);
+    ArrayArg.push(jsonArg3);
+    ArrayArg.push(jsonArg4);
+    ArrayArg.push(jsonArg5);
+    return ArrayArg;
+}

@@ -1,5 +1,8 @@
 /*Global Styles */
 
+body {
+    background-color: #dbf3f5;
+}
 /*Navbar*/
 
 .navbar-brand img {
@@ -176,48 +179,38 @@ select {
     margin: 5px 2px;
     color: #083B66;
 }
-/*.Contacto .submit {
-    background-color: #083B66;
+.Contacto .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.Contacto .container form {
+    float: none;
+    margin: auto;
+}
+.Contacto .submit {
+    background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-/* Style inputs with type="text", select elements and textareas */
-
-/*.Contacto input[type="text"], .Contacto textarea {
+.Contacto input[type=text], textarea {
     width: 100%;
-    /* Full width */
-
-/*padding: 12px;
-*/
-
-/* Some padding */
-
-/*border: 1px solid #ccc;
-*/
-
-/* Gray border */
-
-/*border-radius: 4px;*/
-
-/* Rounded borders */
-
-/*box-sizing: border-box;*/
-
-/* Make sure that padding and width stays in place */
-
-/*margin-top: 6px;*/
-
-/* Add a top margin */
-
-/*margin-bottom: 16px;*/
-
-/* Bottom margin */
-
-/*resize: vertical*/
-
-/* Allow the user to vertically resize the textarea (not horizontally) */
-
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+.Contacto label {
+    padding: 2vh 4vw;
+    display: inline-block;
+}
+.Contacto button {
+    float: right;
 }

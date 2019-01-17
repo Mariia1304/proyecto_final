@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <title>
             Contacto
         </title>
@@ -19,39 +20,8 @@
         <link href="assets/css/mini-event-calendar.css" rel="stylesheet"/>
         <link href="assets/css/style.css" rel="stylesheet"/>
     </head>
-    <style>
-        /* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 0px;
-}
-.container form{
-	float:none;
-	margin:auto; 
-}
-/* Style inputs with type="text", select elements and textareas */
-input,textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-/* Style the submit button with a specific background color etc */
-.submit {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-    </style>
-    <body>
+    <body class="Contacto">
+        <!-- navbar -->
         <nav class="navbar navbar__KidsReview">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -162,37 +132,58 @@ input,textarea {
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <div class="row">
-            <div class="container col-md-6">
-                <form id="contacto" method="post">
-                    <div>
+        <div class="container col-md-8 col-md-offset-2">
+            <form id="contacto" method="post">
+                <div class="row">
+                    <div class="col-md-2">
                         <label for="msg">
                             Message:
                         </label>
+                    </div>
+                    <div class="col-md-10">
                         <textarea id="msg" value="">
                         </textarea>
                     </div>
-                    <div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
                         <label for="nombre">
-                            Nombre
+                            Nombre:
                         </label>
+                    </div>
+                    <div class="col-md-10">
                         <input id="nombre" type="text" value=""/>
                     </div>
-                    <div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
                         <label for="email">
-                            Email
+                            Email:
                         </label>
+                    </div>
+                    <div class="col-md-10">
                         <input id="email" type="text" value=""/>
                     </div>
-                </form>
-                <button class="submit" id="submit">
-                    Enviar
-                </button>
-            </div>
+                </div>
+            </form>
+            <button class="submit" id="submit">
+                Enviar
+            </button>
         </div>
-        <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
-        </script>
-        <script src="assets/js/script.js">
-        </script>
     </body>
 </html>
+<!-- API google maps -->
+<script src="assets/js/app_mapa.js">
+</script>
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAji56K9ixl6HA_0tZ6GEZndoiRzj5BFN4&callback=initMap" type="text/javascript">
+</script>
+<!--JQuery 3.3.1 -->
+<script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<!-- Latest compiled and minified JavaScript -->
+<script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+<script src="assets/js/mini-event-calendar.js">
+</script>
+<script src="assets/js/script.js">
+</script>
