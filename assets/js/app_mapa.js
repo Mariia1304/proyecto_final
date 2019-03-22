@@ -8,6 +8,30 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), mapOptions);
     map.setTilt(50);
     // Multiple markers location, latitude, and longitude
+    //var markers2 = [];
+    var arr = createJsonArray();
+    /*var index = 0;
+    for (index = 0; arr.length; index++) {
+        //var obj = new Object(arr[index]);
+        //obj = arr[index];
+        if (typeof obj !== 'undefined') {
+            console.log(obj.name);
+            console.log(obj.latitude);
+            console.log(obj.longitude);
+            //markers2[index][0] = obj.name;
+            //var fila = [];
+            //fila[0] = "John";
+            //fila[1] = obj.latitude;
+            //fila[2] = obj.longitude;
+            //markers2[index] = new Array(fila);
+            //markers[index][1] = obj.latitude;
+            //markers[index][2] = obj.longitude;
+        }
+        //console.log(obj.description);
+        //console.log(obj.latitude);
+        //console.log(obj.longitude);
+    }*/
+    console.log(arr);
     var markers = [
         ['Parque Araucano, Santiago', -33.402212, -70.574934],
         ['Parque Bicentenario, Santiago', -33.398627, -70.604674],
@@ -61,35 +85,35 @@ function showWindow(title, text) {
 
 function createJsonArray() {
     var jsonArg1 = new Object();
-    jsonArg1.title = 'Parque Araucano';
+    jsonArg1.name = 'Parque Araucano';
     jsonArg1.distrit = 'Vitacura';
     jsonArg1.type = 'parque';
     jsonArg1.latitude = -33.402212;
     jsonArg1.longitude = -70.574934;
     jsonArg1.description = 'Blablablabla';
     var jsonArg2 = new Object();
-    jsonArg2.title = 'Parque Bicentenario';
+    jsonArg2.name = 'Parque Bicentenario';
     jsonArg2.distrit = 'Vitacura';
     jsonArg2.type = 'parque';
     jsonArg2.latitude = -33.398627;
     jsonArg2.longitude = -70.604674;
     jsonArg2.description = 'Blablablabla';
     var jsonArg3 = new Object();
-    jsonArg3.title = 'Resto Alfonsina';
+    jsonArg3.name = 'Resto Alfonsina';
     jsonArg3.distrit = 'Santiago';
     jsonArg3.type = 'restaurant';
     jsonArg3.latitude = -33.366450;
     jsonArg3.longitude = -70.530167;
     jsonArg3.description = 'Blablablabla';
     var jsonArg4 = new Object();
-    jsonArg4.title = 'MIM';
+    jsonArg4.name = 'MIM';
     jsonArg4.distrit = 'Ñuñoa';
     jsonArg4.type = 'museo';
     jsonArg4.latitude = -33.517340;
     jsonArg4.longitude = -70.615900;
     jsonArg4.description = 'Blablablabla';
     var jsonArg5 = new Object();
-    jsonArg5.title = 'Fantasilandia';
+    jsonArg5.name = 'Fantasilandia';
     jsonArg5.distrit = 'Santiago';
     jsonArg5.type = 'juegos';
     jsonArg5.latitude = -33.460331480676615;

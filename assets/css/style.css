@@ -1,11 +1,43 @@
+#logo img {
+    width: 40%;
+}
+@media (max-width: 576px) {
+    #logo img {
+        width: 100%;
+    }
+    /* Los estilos aquí contenidos solo se aplicarán a partir
+    del tamaño de pantalla indicado */
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    #logo img {
+        width: 80%;
+    }
+    /* Solo se aplicarán entre los tamaños indicados */
+}
+/*navbar*/
+
+li {
+    margin-left: 10vw;
+}
+#navbar {
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+#panoramas {
+    margin-top: 5vh;
+}
+article {
+    margin: 10px;
+}
 /*Global Styles */
 
-body {
+/*body {
     background-color: #dbf3f5;
-}
+}*/
+
 /*Navbar*/
 
-.navbar-brand img {
+/*.navbar-brand img {
     max-width: 200px;
     margin-top: -50px;
     margin-left: -25px;
@@ -76,10 +108,11 @@ ul.nav {
         z-index: 1000;
         position: absolute;
     }
-}
+}*/
+
 /*header*/
 
-img.carousel-inner {
+/*img.carousel-inner {
     width: 100%;
 }
 .carousel-caption {
@@ -100,19 +133,21 @@ img.carousel-inner {
     .carousel-inner h3 {
         font-size: 2rem;
     }
-}
+}*/
+
 /*Seccion place_top*/
 
-.col-md-3 {
+/*.col-md-3 {
     padding: 0;
 }
 .place_top img {
     height: 200px;
     width: 100%;
-}
+}*/
+
 /*Seccion calendario*/
 
-.calendario .relative {
+/*.calendario .relative {
     padding-right: 0px;
 }
 .calendario .overlay {
@@ -133,7 +168,8 @@ img.carousel-inner {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     /* Black see-through */
-    color: #f1f1f1;
+
+/*color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
     opacity: 0;
@@ -144,7 +180,8 @@ img.carousel-inner {
 }
 .relative:hover .overlay {
     opacity: 1;
-}
+}*/
+
 /*mapa*/
 
 /* Always set the map height explicitly to define the size of the div
@@ -171,7 +208,7 @@ select {
 }
 /*footer*/
 
-.fab {
+/*.fab {
     padding: 10px;
     font-size: 40px;
     text-align: center;
@@ -213,4 +250,4 @@ select {
 }
 .Contacto button {
     float: right;
-}
+}*/
