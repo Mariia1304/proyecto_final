@@ -29,6 +29,20 @@ li {
 article {
     margin: 10px;
 }
+/*slider*/
+
+.slide {
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.slide a p {
+    position: absolute;
+    top: 20px;
+    color: white;
+}
 /*Global Styles */
 
 /*body {
@@ -208,6 +222,11 @@ select {
 }
 /*footer*/
 
+.page-footer {
+    background-color: gray;
+    margin-top: 20px;
+    color: white;
+}
 /*.fab {
     padding: 10px;
     font-size: 40px;
