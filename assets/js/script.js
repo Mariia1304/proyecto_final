@@ -1,82 +1,26 @@
-var db_events = [{
-    title: "Board members meeting.",
-    date: 1532381440036,
-    link: "http://empieza.desafiolatam.com/"
-}, {
-    title: "Delaware branch opening.",
-    date: 1532467961534,
-    link: "events.com/ev1"
-}, {
-    title: "An important event.",
-    date: 1532554405128,
-    link: "events.com/ev1"
-}];
 $(document).ready(function() {
-    // navbar
-    // For the thumbnail demo! :]
-    var count = 1
-    setTimeout(demo, 500)
-    setTimeout(demo, 700)
-    setTimeout(demo, 900)
-    setTimeout(reset, 2000)
-    setTimeout(demo, 2500)
-    setTimeout(demo, 2750)
-    setTimeout(demo, 3050)
-    var mousein = false
-
-    function demo() {
-        if (mousein) return
-        document.getElementById('demo' + count++).classList.toggle('hover')
-    }
-
-    function demo2() {
-        if (mousein) return
-        document.getElementById('demo2').classList.toggle('hover')
-    }
-
-    function reset() {
-        count = 1
-        var hovers = document.querySelectorAll('.hover')
-        for (var i = 0; i < hovers.length; i++) {
-            hovers[i].classList.remove('hover')
-        }
-    }
-    document.addEventListener('mouseover', function() {
-        mousein = true
-        reset()
-    })
-    $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
+    $('#contact').on('click', function(event) {
+        event.preventDefault();
+        $('#formulario').toggleClass('display');
     });
-    $('#sidebarCollapse').on('click', function() {
-        // open or close navbar
-        $('#sidebar').toggleClass('active');
-        $('#content').toggleClass('active');
-    });
-    //$("#calendar").MEC({
-    //  calendar_link: "example.com/myCalendar",
-    //events: db_events
-    // });
-    //if you don't have events, use
-    //$("#calendar2").MEC();
     //validacion de formulario de contacto:
-    $("#submit").on("click", function() {
-        var nombre = $("#nombre").val();
-        var email = $("#email").val();
-        var text = $("#msg").val();
-        if (text.trim().length == 0) {
-            alert("hay que llenar campo message");
-            $("#msg").focus();
-        } else if (nombre.trim().length == 0) {
-            alert("hay que llenar campo nombre");
-            $("#nombre").focus();
-        } else if (email.trim().length == 0) {
-            alert("hay que llenar campo email");
-            $("#email").focus();
-        } else {
-            $("#nombre").val('');
-            $("#email").val('');
-            $("#msg").val('');
-        }
-    });
+    // $("#submit").on("click", function() {
+    //     var nombre = $("#nombre").val();
+    //     var email = $("#email").val();
+    //     var text = $("#msg").val();
+    //     if (text.trim().length == 0) {
+    //         alert("hay que llenar campo message");
+    //         $("#msg").focus();
+    //     } else if (nombre.trim().length == 0) {
+    //         alert("hay que llenar campo nombre");
+    //         $("#nombre").focus();
+    //     } else if (email.trim().length == 0) {
+    //         alert("hay que llenar campo email");
+    //         $("#email").focus();
+    //     } else {
+    //         $("#nombre").val('');
+    //         $("#email").val('');
+    //         $("#msg").val('');
+    //     }
+    // });
 });

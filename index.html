@@ -2,9 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
         <title>
             KidsReview
         </title>
+        <!-- Font Awesome -->
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet"/>
+        <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,800,900i" rel="stylesheet"/>
         <!-- Bootstrap css -->
         <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
@@ -38,7 +42,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                Panoramas y noticias
+                                Panoramas
                             </a>
                         </li>
                         <li class="nav-item dropdown">
@@ -205,7 +209,7 @@
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi nisi dolorem, repellat nesciunt esse quidem voluptates consequuntur voluptate! Quam sit in est incidunt odio iste sequi fuga voluptas, adipisci!
                                     </p>
-                                    <button>
+                                    <button class="btn btn-light">
                                         leer mas
                                     </button>
                                 </article>
@@ -219,7 +223,7 @@
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi nisi dolorem, repellat nesciunt esse quidem voluptates consequuntur voluptate! Quam sit in est incidunt odio iste sequi fuga voluptas, adipisci!
                                     </p>
-                                    <button>
+                                    <button class="btn btn-light">
                                         leer mas
                                     </button>
                                 </article>
@@ -233,7 +237,7 @@
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi nisi dolorem, repellat nesciunt esse quidem voluptates consequuntur voluptate! Quam sit in est incidunt odio iste sequi fuga voluptas, adipisci!
                                     </p>
-                                    <button>
+                                    <button class="btn btn-light">
                                         leer mas
                                     </button>
                                 </article>
@@ -247,7 +251,7 @@
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, animi nisi dolorem, repellat nesciunt esse quidem voluptates consequuntur voluptate! Quam sit in est incidunt odio iste sequi fuga voluptas, adipisci!
                                     </p>
-                                    <button>
+                                    <button class="btn btn-light">
                                         leer mas
                                     </button>
                                 </article>
@@ -260,9 +264,58 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-            <section id="map">
+        <div class="container" style="margin-top: 20px;">
+            <section id="map" style="">
             </section>
+            <div id="formContent">
+                <form action="" id="" style="">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            Example select
+                        </label>
+                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>
+                                1
+                            </option>
+                            <option>
+                                2
+                            </option>
+                            <option>
+                                3
+                            </option>
+                            <option>
+                                4
+                            </option>
+                            <option>
+                                5
+                            </option>
+                        </select>
+                    </div>
+                    <label for="exampleFormControlSelect1">
+                        Example select
+                    </label>
+                    <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                        <option>
+                            1
+                        </option>
+                        <option>
+                            2
+                        </option>
+                        <option>
+                            3
+                        </option>
+                        <option>
+                            4
+                        </option>
+                        <option>
+                            5
+                        </option>
+                    </select>
+                    <button class="btn btn-light" style="margin-top: 10px;">
+                        submit
+                    </button>
+                </form>
+            </div>
         </div>
         <!-- Footer -->
         <footer class="page-footer pt-4">
@@ -273,12 +326,31 @@
                     <!-- Grid column -->
                     <div class="col-md-6 mt-md-0 mt-3">
                         <!-- Content -->
-                        <h5 class="text-uppercase">
-                            Footer Content
-                        </h5>
-                        <p class="text-uppercase">
-                            Here you can use rows and columns here to organize your footer content.
-                        </p>
+                        <a href="#" id="contact">
+                            <h5 class="text-uppercase">
+                                Contactenos
+                            </h5>
+                        </a>
+                        <div class="display" id="formulario">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">
+                                        Email address
+                                    </label>
+                                    <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">
+                                        Mensaje
+                                    </label>
+                                    <textarea class="form-control" id="formGroupExampleInput2" placeholder="Another input" type="text">
+                                    </textarea>
+                                </div>
+                                <button class="btn btn-light" type="submit">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <!-- Grid column -->
                     <hr class="clearfix w-100 d-md-none pb-3">
@@ -286,27 +358,25 @@
                         <div class="col-md-3 mb-md-0 mb-3">
                             <!-- Links -->
                             <h5 class="text-uppercase">
-                                Links
+                                Siguenos en redes sociales
                             </h5>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="#!">
-                                        Link 1
+                                    <a href="#">
+                                        <i class="fab fa-facebook">
+                                        </i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!">
-                                        Link 2
+                                    <a href="#">
+                                        <i class="fab fa-twitter-square">
+                                        </i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!">
-                                        Link 3
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        Link 4
+                                    <a href="#">
+                                        <i class="fab fa-instagram">
+                                        </i>
                                     </a>
                                 </li>
                             </ul>
@@ -320,11 +390,10 @@
             <!-- Footer Links -->
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">
-                © 2018 Copyright:
+                © 2018 Copyright:KidsReview
             </div>
             <!-- Copyright -->
         </footer>
-        <!-- Footer -->
         <script src="assets/js/app_mapa.js">
         </script>
         <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAji56K9ixl6HA_0tZ6GEZndoiRzj5BFN4&callback=initMap" type="text/javascript">
@@ -341,6 +410,8 @@
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" type="text/javascript">
         </script>
         <script src="slick/slick.min.js" type="text/javascript">
+        </script>
+        <script src="assets/js/script.js">
         </script>
         <script>
             $(document).ready(function(){
