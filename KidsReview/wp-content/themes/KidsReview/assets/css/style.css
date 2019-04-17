@@ -1,0 +1,447 @@
+html, body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+/*.wp-post-image {
+    width: 100%;
+}*/
+
+h4, h5 {
+    font-weight: 700;
+    color: #a0d995;
+}
+p, li {
+    font-size: 1.2em;
+}
+a {
+    font-size: 1.1em;
+}
+button.btn-light {
+    font-size: 1.2em;
+}
+#logo img {
+    width: 40%;
+}
+@media (max-width: 576px) {
+    #logo img {
+        width: 100%;
+    }
+    /* Los estilos aquí contenidos solo se aplicarán a partir
+    del tamaño de pantalla indicado */
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    #logo img {
+        width: 80%;
+    }
+    /* Solo se aplicarán entre los tamaños indicados */
+}
+/*navbar*/
+
+li {
+    margin-left: 10vw;
+}
+#navbar {
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+#panoramas {
+    margin-top: 5vh;
+}
+/*slider*/
+
+.responsive {
+    margin-top: 30px;
+}
+.slide {
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.slide a p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+    color: white;
+}
+/*Global Styles */
+
+/** {
+    margin: 0;
+    padding: 0;
+}
+html, body, {
+    width: 100%;
+    height: 100%;
+}*/
+
+/*mapa*/
+
+#map {
+    height: 60vh;
+    width: 100%;
+}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#formContent {
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+@media only screen and (max-width: 767px) {
+    #formContent {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #formContent {
+        position: relative;
+        bottom: 300px;
+        left: 230px;
+        width: 200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    /* Solo se aplicarán entre los tamaños indicados */
+}
+select {
+    margin-bottom: 40px;
+}
+@media (min-width: 993px) {
+    /* Los estilos aquí contenidos solo se aplicarán a partir
+    del tamaño de pantalla indicado */
+}
+/*configurandobtn*/
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* .button */
+
+.button {
+    display: inline-block;
+    position: relative;
+    padding: 0.67em;
+    border: 2px solid #a0d995;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: .7em;
+    outline: none;
+    color: #a0d995;
+    background: transparent;
+    font-family: 'raleway', sans-serif;
+    margin-bottom: 5px;
+}
+.button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.button:before, .button:after {
+    content: '';
+    position: absolute;
+    top: 0.67em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s, opacity .6s;
+    -moz-transition: .4s, opacity .6s;
+    -o-transition: .4s, opacity .6s;
+    transition: .4s, opacity .6s;
+}
+/* :before */
+
+.button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%, 0);
+    -moz-transform: translate(-150%, 0);
+    -ms-transform: translate(-150%, 0);
+    -o-transform: translate(-150%, 0);
+    transform: translate(-150%, 0);
+}
+/* :after */
+
+.button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%, 0);
+    -moz-transform: translate(150%, 0);
+    -ms-transform: translate(150%, 0);
+    -o-transform: translate(150%, 0);
+    transform: translate(150%, 0);
+}
+/* Span on :hover and :active */
+
+.button:hover span, .button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+.button:hover:before, .button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+/* 
+  We hide :before pseudo-element on :active
+*/
+
+.button:active:before {
+    -webkit-transform: translate(-150%, 0);
+    -moz-transform: translate(-150%, 0);
+    -ms-transform: translate(-150%, 0);
+    -o-transform: translate(-150%, 0);
+    transform: translate(-150%, 0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+/*footer*/
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+.fa-twitter-square:hover {
+    color: #00acee;
+}
+.fa-instagram:hover {
+    color: #c13584;
+}
+.page-footer {
+    margin-top: 20px;
+    color: white;
+    background-color: #a0d995;
+}
+.list-unstyled li {
+    display: inline;
+    margin: 15px;
+}
+.list-unstyled li a i {
+    font-size: 40px;
+}
+.list-unstyled li a {
+    color: white;
+}
+.display {
+    display: none;
+}
+#contact {
+    color: white
+}
+h5.contacto {
+    color: white;
+    font-weight: 300;
+    transition: .3s;
+}
+h5.contacto:hover {
+    color: white;
+    font-weight: 700;
+    transition: .3s;
+}
+/*menumaker*/
+
+#cssmenu {
+    list-style-type: none;
+    float: none;
+    margin: 1em;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: max-height 0.25s ease-in;
+}
+#cssmenu ul li {
+    display: block;
+    padding: 0;
+    position: relative;
+}
+#cssmenu ul li ul {
+    background: rgba(245, 245, 245, .9);
+    width: auto;
+    display: none;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    top: 35px;
+    width: 220px;
+    box-sizing: border-box;
+}
+#cssmenu>ul>li>a {
+    color: gray;
+    padding: 10px 25px;
+}
+#cssmenu>ul>li.has-sub>a {
+    padding-right: 50px;
+}
+#cssmenu>ul>li>a:hover {
+    color: #a0d995;
+}
+#cssmenu ul li ul li {
+    border: none;
+    /* border-right: 1px #616161 solid;*/
+    padding: 0;
+}
+#cssmenu ul li:hover ul {
+    display: block;
+}
+#cssmenu ul li ul li a {
+    padding: 10px;
+    font-weight: 300;
+    width: 100%;
+    color: gray;
+    font-size: .8em;
+}
+#cssmenu ul li ul li ul {
+    background: rgba(245, 245, 245, .7);
+    width: auto;
+    display: none;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    right: -281px;
+    width: 280px;
+}
+#cssmenu ul li:hover ul li ul {
+    display: none;
+}
+#cssmenu ul li ul li:hover ul {
+    display: block;
+}
+#cssmenu ul li ul li:hover {
+    background: #E5BDDD;
+}
+#cssmenu ul li ul li:hover a {
+    color: white;
+}
+#cssmenu ul li ul li:hover ul li {
+    border: none;
+}
+#cssmenu ul li ul li ul li a {
+    padding: 10px;
+    font-weight: 300;
+}
+#cssmenu {
+    background: transparent;
+}
+#cssmenu>ul>li.has-sub>a:before {
+    top: 12px;
+}
+#cssmenu>ul>li.has-sub>a:after {
+    top: 15px;
+}
+.menu-opened {
+    top: -65px!important;
+    position: absolute;
+}
+#pull, .btn-menu {
+    display: none;
+}
+.small #cssmenu {
+    width: auto;
+    float: left;
+    margin: 0;
+}
+.sub-menu {
+    z-index: 1000;
+}
+/*cards*/
+
+.card {
+    margin: 5px;
+    border: 2px solid #a0d995;
+    width: 17rem;
+}
+.card-img-top {
+    height: 250px;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.overlay {
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s;
+}
+.overlay:hover {
+    opacity: 1;
+    transition: .4s;
+}
+.img-fluid__lugares {
+    height: 400px;
+    width: 80%;
+}
+/*faltan queris aqui*/
+
+.row__lugares, .row__lugar {
+    margin-top: 20px;
+}
+.article__lugares {
+    padding: 10px;
+}
+.a__lugares {
+    text-decoration: none;
+    color: black;
+}
+.a__lugares:hover {
+    text-decoration: none;
+    color: black;
+}
+.jumbotron {
+    background-color: transparent;
+}
+.display {
+    display: block;
+}
+#clima {
+    margin-bottom: 20px;
+}
+#print tr {
+    border-bottom: 1px solid gray;
+}
+tbody {
+    width: 100%;
+}

@@ -4,6 +4,12 @@ html, body {
 p, li {
     font-size: 1.2em;
 }
+a {
+    font-size: 1.1em;
+}
+button.btn-light {
+    font-size: 1.2em;
+}
 #logo img {
     width: 40%;
 }
@@ -48,8 +54,11 @@ article {
     padding: 5px;
 }
 .slide a p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
     position: absolute;
-    top: 20px;
+    bottom: 20px;
+    left: 130px;
     color: white;
 }
 /*Global Styles */
@@ -97,7 +106,6 @@ html, body, {
         width: 200px;
         margin: 0 auto;
         padding: 20px;
-        background-color: gray;
     }
     /* Solo se aplicarán entre los tamaños indicados */
 }
