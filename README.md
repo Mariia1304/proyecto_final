@@ -1,9 +1,13 @@
 
+# Proyecto KidsReview
+
+[video](https://www.youtube.com/watch?v=fOt499wIxO8&feature=youtu.be)
+
 [link al proyecto en produccion](http://186.64.118.50/~feg11mariia/)
 
 [link al proyecto en gh-pages](https://mariia1304.github.io/proyecto_final/index.html)
   
-**KidsRewiev(o FamilyWithKids?)**
+**KidsRewiev()**
    
           El proyecto combina una "guía para niños" en       region Metropolitana, reseñas con fotos y pósters(todavia no).
    
